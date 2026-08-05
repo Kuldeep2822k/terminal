@@ -267,7 +267,6 @@ void WindowEmperor::CreateNewWindow(winrt::TerminalApp::WindowRequestedArgs args
 
     auto host = std::make_shared<AppHost>(this, _app.Logic(), std::move(args));
     host->Initialize();
-
     _handoffTimeoutTimer.Stop();
 
     _windowCount += 1;
